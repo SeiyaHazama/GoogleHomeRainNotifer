@@ -24,8 +24,8 @@ request.get({
 }, function (err, req, data) {
     let weather_raw = data.Feature[0].Property.WeatherList.Weather;
     let flg = false;
-    for (var i = 0; i < weather_raw.length; i++) {
-        if (weather_raw[i].Rainfall > 0) {
+    for (var i = 1; i < weather_raw.length; i++) {
+        if (weather_raw[i].Rainfall > 0 && weather_raw[0].Rainfall == 0) {
             let msg = "Message of rain with in 60 min";
             flg = true;
             home.notify(msg, (res) => {
