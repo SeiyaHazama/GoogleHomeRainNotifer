@@ -1,0 +1,17 @@
+{
+    "name": "GoogleHomeRainNotifer",
+    "version": "1.0.0",
+    "keywords": [
+        "util",
+        "functional",
+        "server",
+        "client",
+        "browser"
+    ],
+    "author": "seiya",
+    "contributors": [],
+    "dependencies": {
+        "get-json": "^1.0.1",
+        "google-home-notifier": "https://github.com/kei-s/google-home-notifier/tarball/update-google-tts-api"
+    }
+}
